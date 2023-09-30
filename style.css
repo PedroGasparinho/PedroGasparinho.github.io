@@ -37,13 +37,40 @@ body {
     grid-row: span 7;
     margin: 10px;
     display: grid;
-    grid-template-rows: repeat(10, minmax(50px, 1fr));
-    grid-template-columns: repeat(10, minmax(50px, 1fr));
+    grid-template-rows: repeat(12, minmax(50px, 1fr));
+    grid-template-columns: repeat(12, minmax(50px, 1fr));
 }
 
 .home-description {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
+}
+
+.project-title {
+    display: flex;
+    grid-row: 1 / 3;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-stage {
+    display: flex;
+    grid-row: span 3;
+    grid-column: span 4;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-photo {
+    grid-row: span 4;
+    grid-column: 1 / -1;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
 }
 
 .team-photo {
@@ -55,14 +82,18 @@ body {
 }
 
 .team-title {
-    grid-row: 1 / 3;
+    display: flex;
+    grid-row: 1 / 4; /*4-> last row is empty, 5 -> all rows are full*/
     grid-column: 5 / -1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .team-profile {
     display: flex;
     grid-row: span 4;
-    grid-column: span 3;
+    grid-column: span 4;
     flex-direction: column;
     gap: 10px;
     align-items: center;
