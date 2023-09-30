@@ -19,13 +19,16 @@ body {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(8, minmax(50px, 1fr));
-    background-color: black;
+    background-image: linear-gradient(to Right, #0F1A91 , #2FBCC1);
     color: white;
     align-items: center;
 }
 
 .logo-item {
+    display: flex;
     grid-column: 1 / 6;
+    align-items: center;
+    gap: 20px;
 }
 
 .tab-item {
