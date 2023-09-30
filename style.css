@@ -24,18 +24,12 @@ body {
 }
 
 .logo-item {
-    grid-column: 1 / 7;
+    grid-column: 1 / 6;
 }
 
-.project-tab-item {
+.tab-item {
     grid-column: span 1;
-    text-align: right;
-    vertical-align: middle;
-}
-
-.team-tab-item {
-    grid-column: span 1;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -47,3 +41,23 @@ body {
 div {
     display: grid;
 }
+
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
