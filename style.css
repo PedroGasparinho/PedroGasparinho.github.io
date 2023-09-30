@@ -1,1 +1,49 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.item {
+    padding: 0.5em;
+    color: white;
+    margin: 10px;
+}
+
+.outer-container {
+    display: grid;
+    height: 100vh;
+    max-height: 100vh;
+    grid-template-rows: repeat(8, minmax(50px, 1fr));
+}
+
+.header-container {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(50px, 1fr));
+    background-color: black;
+}
+
+.logo-item {
+    grid-column: 1 / 7;
+}
+
+.project-tab-item {
+    grid-column: span 1;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.team-tab-item {
+    grid-column: span 1;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.body-container {
+    grid-row: span 7;
+    margin: 10px;
+}
+
+div {
+    display: grid;
+}
