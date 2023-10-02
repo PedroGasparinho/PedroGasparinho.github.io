@@ -37,58 +37,37 @@ body {
 }
 
 .body-container {
-    padding: 10px;
-    grid-row: span 6;
+    grid-row: span 7;
     display: grid;
-    grid-template-rows: repeat(6, minmax(50px, 1fr));
+    grid-template-rows: repeat(12, minmax(50px, 1fr));
     grid-template-columns: repeat(12, minmax(50px, 1fr));
 }
 
-.home-title {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
+.team-photo {
+    grid-row: 1 / -1;
+    grid-column: 1 / 5;
     align-items: center;
     text-align: center;
-}
-
-.home-goals {
-    grid-row: span 2;
-    grid-column: span 4;
-    text-align: center;
-}
-
-.home-solutions {
-    grid-row: span 2;
-    grid-column: span 4;
-    text-align: center;
-}
-
-.home-users {
-    grid-row: span 2;
-    grid-column: span 4;
-    text-align: center;
-}
-
-.home-photo {
-    grid-row: span 3;
-    grid-column: 1 / -1;
     border: 1px solid black;
-    align-items: center;
-    text-align: center;
 }
 
-.footer-container {
-    grid-row: span 1;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(50px, 1fr));
+.team-title {
+    display: flex;
+    grid-row: 1 / 4; /*4-> last row is empty, 5 -> all rows are full*/
+    grid-column: 5 / -1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.home-disclaimer {
-    padding: 10px;
-    grid-column: 1 / -1;
-    background-image: linear-gradient(to Right, #0F1A91 , #2FBCC1);
-    color: white;
+.team-profile {
+    display: flex;
+    grid-row: span 4;
+    grid-column: span 4;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 div {
