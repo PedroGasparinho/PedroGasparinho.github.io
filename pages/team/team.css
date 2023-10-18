@@ -45,16 +45,16 @@ body {
 
 .team-photo {
     grid-row: 1 / -1;
-    grid-column: 1 / 5;
+    grid-column: 1 / 1; /* photo -> 1 / 5 */
     align-items: center;
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .team-title {
     display: flex;
     grid-row: 1 / 4; /*4-> last row is empty, 5 -> all rows are full*/
-    grid-column: 5 / -1;
+    grid-column: 1 / -1; /* photo -> 5 / -1 */
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -63,7 +63,7 @@ body {
 .team-profile {
     display: flex;
     grid-row: span 4;
-    grid-column: span 4;
+    grid-column: span 5; /* photo -> span 4 */
     flex-direction: column;
     gap: 10px;
     align-items: center;

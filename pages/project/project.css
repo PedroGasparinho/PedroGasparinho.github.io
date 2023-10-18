@@ -65,7 +65,7 @@ body {
 .project-photo {
     grid-row: span 4;
     grid-column: 1 / -1;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     align-items: center;
     text-align: center;
 }
